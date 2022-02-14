@@ -1,6 +1,8 @@
 body{
     background-color: rgb(200, 215, 248);
 }
+
+
 #cabecalho {
     position: absolute;
     background-color: #6096e0;
@@ -26,3 +28,65 @@ body{
     height: 69%;
     margin-top: -110px;
     margin-left: 750px;}
+
+#slogan {
+    position: absolute;
+    font-family: 'arial', Courier, monospace;
+    color: white;
+    font-style: italic;
+    left: 890px;
+    top: 69px;
+}
+
+#menu {
+    z-index: 1;
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    height: 50px;
+    width: 50px;
+    opacity: 0%;
+    cursor: pointer;
+}
+
+#container {
+    color: white;
+}
+
+.menubarra{
+    position: absolute;
+    background-color: white;
+    height: 5px;
+    width: 38px;
+    transition: 0.25s ease-in-out;
+}
+
+#barras1{
+    top: 50px;
+    left: 30px;
+}
+
+#barras2{
+    top: 60px;
+    left: 30px;
+}
+
+#barras3{
+    top: 70px;
+    left: 30px;
+}
+
+
+#menu:checked + label span:nth-child(1){
+    top: 60px;
+    transform: rotate(-45deg);
+}
+
+#menu:checked + label span:nth-child(2){
+    opacity: 0;
+}
+
+#menu:checked + label span:nth-child(3){
+    top: 60px;
+    transform: rotate(45deg);
+}
