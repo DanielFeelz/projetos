@@ -102,7 +102,7 @@ body{
     width: 250px;
     height: 250px;
     opacity: 0%;
-    
+    left: 0px;
 }
 
 #menu:checked + label span:nth-child(4){
@@ -129,6 +129,7 @@ body{
     width: 250px;
     height: 250px;
     opacity: 0%;
+    left: 0px;
 }
 
 #menu:not(:checked) + label span:nth-child(5){
