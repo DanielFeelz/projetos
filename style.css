@@ -1,4 +1,5 @@
 body{
+    position: absolute;
     background-color: rgb(200, 215, 248);
 }
 
@@ -45,10 +46,10 @@ body{
 #menu {
     z-index: 1;
     position: absolute;
-    top: 35px;
-    left: 0px;
-    height: 50px;
-    width: 50px;
+    top: 40px;
+    left: 25px;
+    height:40px;
+    width: 40px;
     opacity: 0%;
     cursor: pointer;
 }
@@ -96,18 +97,22 @@ body{
 }
 
 #menucontainer{
+    z-index: -3;
     background-color: #4b7dde;
     background-image: linear-gradient(to right, #4b7dde 60%, #4972de);
     position: absolute;
     width: 250px;
-    height: 250px;
+    height: 100px;
     opacity: 0%;
-    left: 0px;
+    left: -5px;
+    border-radius: 10px;
 }
 
 #menu:checked + label span:nth-child(4){
-    top: 130px;
-    opacity: 100%;
+    z-index: -3;
+    top: 120px;
+    left: -5px;
+    opacity: 65%;
     animation-duration: 0.50s;
     animation-name: slidein;
     animation-direction: normal;
@@ -115,25 +120,28 @@ body{
 }
 
 @keyframes slidein{
-    from {width: 0px; height: 250px; top: 130px;}
+    from {width: 0px; height: 100px; top: 120px;}
     
     to {width: 250px;
-        height: 250px; top: 130px;}
+        height: 100px; top: 120px;}
 }
 
 #menucontainer2{
-    top: 130px;
+    z-index: -3;
+    top: 120px;
     position: absolute;
     background-color: #4b7dde;
     background-image: linear-gradient(to right, #4b7dde 60%, #4972de);
     width: 250px;
-    height: 250px;
+    height: 100px;
     opacity: 0%;
-    left: 0px;
+    left: -5px;
+    border-radius: 10px;
 }
 
 #menu:not(:checked) + label span:nth-child(5){
-    top: 130px;
+    z-index: -3;
+    top: 120px;
     animation-name: slideoff;
     animation-duration: 0.50s;
     animation-direction: alternate;
@@ -142,9 +150,9 @@ body{
 
 @keyframes slideoff{
     from {width: 250px;
-        height: 250px; opacity: 100%; top: 130px;}
+        height: 100px; opacity: 60%; top: 120px;}
     
-    to {width: 0px; top: 130px;}
+    to {width: 0px; top: 120px;}
 }
 
 #linklogo{
@@ -157,4 +165,52 @@ body{
 #checkbox-menu{
     margin-top: 25px;
     margin-left: 0px;
+}
+
+.containerdoces{
+    position: absolute;
+    width: 370px;
+    height: 400px;
+    top: 240px;
+    left: 30px;
+    background-color: #332cd0;
+    background-image: linear-gradient(to bottom, #4c86de 75%, #3530b9);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #6c65f1;
+}
+
+#doce1{
+    left: 245px;
+    opacity: 65%;
+}
+
+#doce2{
+    left: 755px;
+    opacity: 65%;
+}
+
+#doce3{
+    left: 1270px;
+    opacity: 65%;
+}
+
+.imgprodutos{
+    position: absolute;
+    opacity: 100%;
+    height: 185px;
+    top: 300px;
+}
+
+#tortamaca{
+    left: 320px;
+}
+
+.zoom img{
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.zoom:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
