@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#containergeral{
+    width: 100%;
+    height: 100%;
+}
+
+.logo_conectar{
+    width: 12vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25vh;
+}
+
+#imagem_deco{
+    width: 30vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#botao_cadastro{
+    background: #02AD6D;
+    height: 3.5vh;
+    width: 40vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5%;
+    border-radius: 2px;
+    text-align: center;
+    padding-top: auto;
+
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+}
+
+#texto_cadastro{
+    color: #fff;
+    font-weight: 580;
+    margin: 0;
+    font-size: clamp(1rem, 0.8vw, 2rem);
+    line-height: 3.5vh;
+}
+
+a{
+    text-decoration: none;
+}
+
